@@ -1,0 +1,57 @@
+# ============================================================
+# Pollos al Vuelo — .gitignore raíz
+# ============================================================
+
+# Secretos y variables de entorno (NUNCA subir al repositorio)
+.env
+.env.local
+.env.*.local
+.env.production
+backend/.env
+frontend/.env.local
+frontend/.env.production
+*service-account*.json
+*firebase-adminsdk*.json
+firebase-service-account.json
+
+# Instaladores y archivos personales/temporales fuera del código fuente
+*.exe
+*.msi
+backend/WhatsApp Image*.jpeg
+read_doc.py
+
+# Python / Backend
+.venv/
+venv/
+env/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.tsbuildinfo
+
+# Logs de Firebase Emulators y herramientas
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*.log
+
+# Editores y Sistema Operativo
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
